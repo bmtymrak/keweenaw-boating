@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
 import requests
 import datetime
 from dateutil import tz
