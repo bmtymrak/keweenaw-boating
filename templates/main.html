@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keweenaw Boating</title>
+    <link rel="stylesheet" href="../static/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+      <div class="header-container">
+        <div class="top-title"><h1>Should I go boating in the Keweenaw?</h1></div>
+      </div>
+      <div class="slanted-left"></div>
+      <div id="content-container">
+        <div class="container">
+          <div class="content left-content">
+            <h2>North Entry</h2>
+            <ul>
+                <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <circle cx="12" cy="12" r="9" />
+                    <polyline points="12 7 12 12 15 15" />
+                  </svg>Date and Time: {{north_time}}</div></li>
+                <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wind" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <path d="M5 8h8.5a2.5 2.5 0 1 0 -2.34 -3.24" />
+                    <path d="M3 12h15.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                    <path d="M4 16h5.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                  </svg>Wind speed: {{north_wind_speed}} mph</div></li>
+                <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wind" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <path d="M5 8h8.5a2.5 2.5 0 1 0 -2.34 -3.24" />
+                    <path d="M3 12h15.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                    <path d="M4 16h5.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                  </svg>Wind gusts: {{north_wind_gusts}} mph</div></li>
+                <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <polyline points="8 16 10 10 16 8 14 14 8 16" />
+                  <circle cx="12" cy="12" r="9" />
+                </svg>Wind Direction: {{north_wind_direction}}&#176;</div></li>
+                <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-vertical" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <polyline points="8 7 12 3 16 7" />
+                  <polyline points="8 17 12 21 16 17" />
+                  <line x1="12" y1="3" x2="12" y2="21" />
+                </svg>Wave Height: {{north_wave_height}} ft</div></li>
+                <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <path d="M10 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 0 0 -4 0v8.5" />
+                    <line x1="10" y1="9" x2="14" y2="9" />
+                  </svg>Air Temp: {{north_air_temp}}&#176;F</div></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="container right-container">
+            <div class="content right-content">
+                <h2>South Entry</h2>
+                <ul>
+                    <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <circle cx="12" cy="12" r="9" />
+                      <polyline points="12 7 12 12 15 15" />
+                    </svg>Date and Time: {{south_time}}</div></li>
+                    <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wind" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <path d="M5 8h8.5a2.5 2.5 0 1 0 -2.34 -3.24" />
+                      <path d="M3 12h15.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                      <path d="M4 16h5.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                    </svg>Wind speed: {{south_wind_speed}} mph</div></li>
+                    <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wind" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <path d="M5 8h8.5a2.5 2.5 0 1 0 -2.34 -3.24" />
+                      <path d="M3 12h15.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                      <path d="M4 16h5.5a2.5 2.5 0 1 1 -2.34 3.24" />
+                    </svg>Wind gusts: {{south_wind_gusts}} mph</div></li>
+                    <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <polyline points="8 16 10 10 16 8 14 14 8 16" />
+                      <circle cx="12" cy="12" r="9" />
+                    </svg>Wind Direction: {{south_wind_direction}}&#176;</div></li>
+                    <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-vertical" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <polyline points="8 7 12 3 16 7" />
+                      <polyline points="8 17 12 21 16 17" />
+                      <line x1="12" y1="3" x2="12" y2="21" />
+                    </svg>Wave Height: {{south_wave_height}} ft</div></li>
+                    <li><div class="info-item"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>
+                      <path d="M10 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 0 0 -4 0v8.5" />
+                      <line x1="10" y1="9" x2="14" y2="9" />
+                    </svg>Air Temp: {{south_air_temp}}&#176;F</div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
